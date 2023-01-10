@@ -1,7 +1,7 @@
 Vue.createApp({
  data() {
     return {
-        title:'hej alla'
+        message: '<h1>Välkommen</h1>'
     }
  }
 }).mount("#app")
