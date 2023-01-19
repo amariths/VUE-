@@ -11,7 +11,6 @@ Vue.createApp({
     },
     created() {
       this.fetchCities()
-      
     },
     
 
@@ -38,8 +37,8 @@ Vue.createApp({
                 this.cities = result
               })
           },
-          putCity() {
-        
+          
+        putCity() {
             fetch('https://avancera.app/cities/' + this.select,{
       body: JSON.stringify({ id: this.select, name: this.newname, population: this.newpopulation}),
       headers: {
